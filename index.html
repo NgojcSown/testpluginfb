@@ -30,6 +30,13 @@
           xfbml            : true,
           version          : 'v18.0'
         });
+        FB.Event.subscribe('customerchat.load', function() {
+          FB.CustomerChat.update({
+            greeting: {
+              text: 'Hỗ trợ trực tuyến',
+            },
+          });
+        });
       };
 
       (function(d, s, id) {
