@@ -5,7 +5,7 @@
     <link rel="icon" type="image/svg+xml" href="/testpluginfb/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + React</title>
-    <script type="module" crossorigin src="/testpluginfb/assets/index-5DXU0xp4.js"></script>
+    <script type="module" crossorigin src="/testpluginfb/assets/index-6cGhgvnn.js"></script>
     <link rel="stylesheet" crossorigin href="/testpluginfb/assets/index-4sK4E3Wk.css">
   </head>
   <body>
@@ -47,6 +47,17 @@
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
     </script>
-
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+      // Find the element with class '_4ik4' (or any other selector that uniquely identifies your element)
+      const chatTitleElement = document.querySelector("._4ik4");
+    
+      // Check if the element exists before manipulating it
+      if (chatTitleElement) {
+        // Change the text content of the element
+        chatTitleElement.textContent = "Hello Sơn";
+      }
+    });
+    </script>
   </body>
 </html>
